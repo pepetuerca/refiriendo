@@ -11,12 +11,12 @@ class ServiceController extends Controller
     //     echo "llegue bien";exit;
     // }
 
-    public function listado(){
+    public function listarTodo(){
         $services=Service::all();
         return view('services',compact('services'));
     }
 
-    public function show($id){
+    public function mostrarPorId($id){
 
         $service=Service::find($id);
         return view('perfil',compact('service'));

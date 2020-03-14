@@ -21,7 +21,8 @@ Route::get('/inicio', function () {
 Route::get('/inicio/{id}',function($id){
     return view("detalleCategoria",compact("id"));
 });
-Route::get('/servicios','ServiceController@listado');
+Route::get('/categorias','CategoriesController@listarTodo'); //la ruta /categorias llama al metodo listarTodo del controlador
 
+Route::get('/servicio/{id}','ServiceController@mostrarPorId');
 
-Route::get('/servicio/{id}','ServiceController@show');
+Route::get('/servicios','ServiceController@listarTodo');

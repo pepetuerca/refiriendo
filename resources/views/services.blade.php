@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Servicios</title>
     </head>
+    @include('./header')
     <body>
         <h1>Servicios</h1>
         <ul>
@@ -18,4 +19,5 @@
         </ul>
 
     </body>
+    @include('./footer')
 </html>
